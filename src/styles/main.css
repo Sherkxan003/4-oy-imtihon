@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    color: white;
+}
+header,footer {
+    background: rgba(23, 25, 29, 1);
+    backdrop-filter: blur(1px);
+}
+
+
+.wrappere {
+    background-image: url(../images/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+
+
+}
+
+.wrappere::after {
+    background-image: url(../images/Ellipse\ 4.png);
+}
+
+.container {
+    max-width: 1400px;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.label {
+    cursor: pointer;
+    width: 95px;
+    height: 40px;
+    background: black;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin-top: -20px;
+    border: 1px solid white;
+
+}
+
+.label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 36px;
+    height: 36px;
+    background: #5454D4;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.input:checked+.label {
+    background: white;
+}
+
+.input:checked+.label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.label:active:after {
+    width: 90px;
+}
+
+
+.son {
+    background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -text-fill-color: transparent;
+
+
+}
+
+.link:hover {
+    background: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+
+}
+
+.span {
+    z-index: 5;
+}
+
+.carusel__item,
+.carusel__item1,
+.carusel__item2 {
+    /* transform: translateX(-1230px); */
+    transition: all 0.5s ease;
+}
+
+#next,
+#next1,
+#next2 {
+    background-color: gray;
+   
+    z-index: 5;
+}
+
+#prev,
+#prev1,
+#prev2 {
+    background: gray;
+    color:white;
+    z-index: 5;
+}
+div.checbox
